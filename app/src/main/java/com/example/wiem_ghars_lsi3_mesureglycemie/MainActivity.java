@@ -1,4 +1,4 @@
-package com.example.wiem_ghars_lsi3_mesureglycemie.view;
+package com.example.wiem_ghars_lsi3_mesureglycemie;
 
 import androidx.appcompat.app.AppCompatActivity;
 
