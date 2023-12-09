@@ -38,6 +38,6 @@ public class HomeActivity extends AppCompatActivity {
     private void init()
     {
          loginController = com.example.wiem_ghars_lsi3_mesureglycemie.controller.LoginController.getInstance(HomeActivity.this);
-        btnConsultation =(Button)
+
     }
 }
