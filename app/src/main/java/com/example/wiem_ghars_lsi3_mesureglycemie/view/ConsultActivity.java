@@ -26,7 +26,7 @@ public class ConsultActivity extends AppCompatActivity {
         btnReturn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //narja3 le main activityy w result feha prob wella
+                
                 Intent intent=new Intent();
                 if (reponse!=null)
                     setResult(RESULT_OK,intent);
