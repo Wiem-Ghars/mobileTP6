@@ -25,7 +25,7 @@ public class LoginController {
     private static void recapUser(Context context)
     {
         SharedPreferences sharedPreferences = context.getSharedPreferences(SHERED_PREFS,Context.MODE_PRIVATE);
-        //ken mal9ach username msajel yraja3 chaine vide f west utilisateur w password
+
         String username =sharedPreferences.getString("username","");
         String password = sharedPreferences.getString("password","");
         user =new User(username,password);
@@ -39,7 +39,7 @@ public class LoginController {
         SharedPreferences sharedPreferences= context.getSharedPreferences(SHERED_PREFS,Context.MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
         editor.putString("userName",username);
-        //mech b 4aroura nafs el esm houwa nafs el var
+
         editor.putString("password",password);
         editor.apply();
 

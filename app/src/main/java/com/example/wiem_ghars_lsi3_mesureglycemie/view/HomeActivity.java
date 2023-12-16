@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         init();
+        // Affichage du nom d'utilisateur et du mot de passe de l'utilisateur actuel
         etUserName.setText(loginController.getUserName());
         etPassword.setText(loginController.getPassword());
         btnConsultation=(Button) findViewById(R.id.btnConsultation);
@@ -37,7 +38,10 @@ public class HomeActivity extends AppCompatActivity {
     }
     private void init()
     {
-         loginController = com.example.wiem_ghars_lsi3_mesureglycemie.controller.LoginController.getInstance(HomeActivity.this);
+         loginController = LoginController.getInstance(HomeActivity.this);
+        btnConsultation = (Button) findViewById(R.id.btnConsultation);
+        etPassword = (EditText) findViewById(R.id.etPassword);
+        etUserName = (EditText) findViewById(R.id.etUserName);
 
     }
 }
